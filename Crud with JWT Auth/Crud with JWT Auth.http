@@ -1,0 +1,6 @@
+@Crud_with_JWT_Auth_HostAddress = http://localhost:5159
+
+GET {{Crud_with_JWT_Auth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
