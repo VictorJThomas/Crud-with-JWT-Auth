@@ -26,10 +26,9 @@ namespace Crud_with_JWT_Auth.Controllers
             string passwordHash
                 = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
-            string userHash
-                = BCrypt.Net.BCrypt.HashString(request.UserName, 8);
+        
 
-            users.UserName = userHash;
+            users.UserName = request.UserName;
             users.Email = request.Email;
             users.Password = passwordHash;
 

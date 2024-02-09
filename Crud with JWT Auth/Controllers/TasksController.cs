@@ -53,6 +53,8 @@ namespace Crud_with_JWT_Auth.Controllers
                 return BadRequest();
             }
 
+            _context.Attach(tasks);
+
             _context.Entry(tasks).State = EntityState.Modified;
 
             try
